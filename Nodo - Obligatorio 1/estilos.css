@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Sora",sans-serif;
+ 
+}
+
+:root {
+  --circulos: #16213E; 
+  --form:    #0C1222;
+  --bloque:     #A8B6D3;  
+  --botones:      #FFA726; 
+}
+
+body{
+   color: var(--circulos);
+   text-align: center;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1em 5%;
+    background-color:var(--circulos) ;
+    color: white;
+}
+
+nav{
+   display: none;
+}
+
+
+.hero-texto{
+    align-items: center;
+    gap:1.5em;
+    padding-top:3em;
+    color: white;
+     padding-bottom:3rem;    
+}
+
+.hero-texto h1{
+    margin-bottom: 1.2em;
+}
+
+#section-hero {
+    background-color: var(--circulos);
+}
+
+.boton {
+     font-weight: bold;
+     background-color: var(--botones);
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 1.2em 2em;
+    color: var(--circulos);
+    display: inline-block;
+    
+}
+.boton:hover {
+     background: #FFC46B; 
+    }
+
+h2{
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 2.7em;
+}
+
+a { color: inherit;
+}
+
+.beneficios {
+  max-width: 1160px;
+  padding: 0 24px;
+}
+
+.beneficios-caja {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 44px;
+  padding: 56px 24px;
+  text-align: center;
+}
+.beneficio:nth-child(n+3) { 
+    display: none; 
+} 
+
+.circulo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;       
+  background: var(--circulos);
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;        
+  justify-content: center;
+  font-size: 4em;
+}
+
+.imagen-grande {
+  background: white;
+  min-height: 260px;
+}
+
+.imagen-grande img {
+  display: block;       
+  width: 100%;         
+  height: auto;
+}
+#productos{
+    padding: 56px 0;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: 1fr;      
+}
+
+.fila h3 {
+    font-size: 2em;
+}
+
+.bloque-texto-chico {
+  background: var(--bloque);
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: none;
+}
+
+.imagen-boton {
+  background:#5B6F94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+ 
+
+.mosaico-der {
+  background: var(--bruma);
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.bloque-texto-chico h3 {
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.bloque-texto-chico h2 {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.mosaico-der {
+  display: none;
+  background: var(--bruma);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.mosaico-der h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.productos-grid {
+  display: grid;
+  grid-template-columns: 1fr;      
+  gap: 48px;
+}
+ .producto-imagen {
+  background: var(--acero);
+  position: relative;  
+}
+.producto-imagen img {
+  display: block;       
+  width: 100%;         
+  height: auto;
+ }
+
+ .etiqueta {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  background: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 6px 14px;
+}
+
+ .productos-grid {
+     padding: 0 1em
+   }
+
+.producto h3 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.producto p { 
+    margin-bottom: 22px; 
+}
+.producto a { 
+    font-weight: 700;
+ }
+
+ .caja-productos {
+    padding: 0 1em;         
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 48px;     
+  text-align: left;             
+}
+
+.producto:nth-child(n+3) { 
+    display: none; 
+} 
+
+.formulario {
+  background-color:#0C1222;;
+  color:var(--bloque);
+  text-align: center;
+  padding: 84px 24px 64px;
+}
+.formulario h2 {
+  font-weight: 300;
+  font-size: 28px;
+  margin-bottom: 34px;
+}
+.formulario-form {
+  display: flex;
+  flex-direction: column;  
+  max-width: 720px;
+  margin: 0 auto 22px;
+}
+.formulario-form input {
+  flex: 1;
+  padding: 20px 18px;
+  border: 0;
+  font-size: 15px;
+}
+.formulario-form button {
+  width: 100%;
+  padding: 0.5em;
+  border: 0;
+  background: var(--bloque);
+  font-weight: 700;
+  color:var(--circulos);
+}
+
+
+footer {
+  background: #F2F4F8;
+  text-align: center;
+  padding: 1em 2em;
+  font-size: 1rem;
+}
+
+/* =================
+   TABLET
+   ================= */
+@media (min-width: 600px) {
+ 
+    
+ 
+    .hero-texto {
+        padding-top: 4em;
+        padding-bottom: 5em;
+    }
+ 
+    .hero-texto h1 {
+        font-size: 3.5em;
+    }
+ 
+  
+    .beneficios-caja {
+        grid-template-columns: 1fr 1fr;
+        gap: 3em 1.5em;
+        padding: 4em 1.5em;
+    }
+ 
+    .beneficio:nth-child(n+3) {
+        display: block;
+    }
+ 
+    /* ----- 3. MOSAICO ----- */
+    .mosaico-izq {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+ 
+    .fila {
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .bloque-texto-chico {
+        text-align: left;
+        padding: 2em;
+    }
+ 
+    .mosaico-der {
+        display: flex;
+        background: #EBEFF7;
+        text-align: left;
+        padding: 4em 3em;
+    }
+ 
+    #productos {
+        padding: 5em 0;
+    }
+ 
+    .caja-productos {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        padding: 0 2em;
+    }
+ 
+    .formulario-form {
+        flex-direction: row;
+        gap: 1.2em;
+    }
+ 
+    .formulario-form button {
+        width: 25%;
+    }
+}
+ 
+ 
+/* ==============
+   ESCRITORIO
+   ============== */
+@media (min-width: 1024px) {
+ 
+    header {
+        padding: 1em 14%;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+ 
+    nav img {
+        width: 1.6em;
+    }
+ 
+    #hambur {
+        display: none;
+    }
+ 
+    .hero-texto {
+        padding-top: 8em;
+        padding-bottom: 17em;
+    }
+ 
+    .hero-texto p {
+        font-size: 1.3em;
+    }
+ 
+    .hero-texto h1 {
+        font-size: 4.5em;
+        margin-bottom: 0.5em;
+    }
+ 
+   
+    .beneficios {
+        margin: -7em auto 0;   
+    }
+ 
+    .beneficios-caja {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5em;
+        padding: 3em 2.5em 5em;
+    }
+ 
+    .mosaico {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .mosaico-der {
+        padding: 5em;
+    }
+ 
+    .caja-productos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5em;
+        max-width: 72em;
+        margin: 0 auto;
+    }
+ 
+    .producto:nth-child(n+3) {
+        display: block;
+    }
+
+    .formulario-form button {
+        width: 28%;
+    }
+}
